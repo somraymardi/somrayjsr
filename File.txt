@@ -1,0 +1,1205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+ <head> 
+  <link rel="icon" href="view-resources/image/serviceplus-logo.png" type="image/x-icon"> 
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Jharkhand-12</title>
+  <link rel="stylesheet" type="text/css" media="all" href="resources/homePage/20/css/styles.css">
+  <link href="http://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet" type="text/css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-49426451-1"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-49426451-1');
+</script>
+  <style>
+.GB_Window{
+z-index:100002 !important;
+}
+</style>
+  <script type="text/javascript">
+    var GB_ROOT_DIR = "resources/greybox/";
+</script>
+  <script type="text/javascript" src="resources/greybox/AJS.js"></script>
+  <script type="text/javascript" src="resources/greybox/AJS_fx.js"></script>
+  <link href="resources/greybox/gb_styles.css" rel="stylesheet" type="text/css">
+  <link href="resources/css/accordion.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="resources/greybox/gb_scripts.js"></script>
+  <link href="resources/css/panchayat_main.css" rel="stylesheet" type="text/css">
+  <link href="resources/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="resources/js/jquery-3.5.1.min.js" type="text/javascript"></script>
+  <script src="resources/bootstrap-4.0.0/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+  <script type="text/javascript" language="javascript" src="resources/js/jquery.bxslider.js"></script>
+  <link rel="stylesheet" href="resources/homePage/20/css/simple-slider.css" type="text/css">
+  <script type="text/javascript" src="resources/js/jsutil.js"></script>
+  <script src="resources/js/jqueryui.js"></script>
+  <link href="resources/css/jquery-ui-1.8.4.custom.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="resources/css/flexslider.css" type="text/css" media="screen">
+  <script defer src="resources/js/jquery.flexslider-min.js"></script>
+  <script type="text/javascript" src="resources/js/accordion1.js"></script>
+  <script type="text/javascript">
+		$(window).load(function() {
+			$('.flexslider').flexslider();
+		});
+</script>
+  <script type="text/javascript">
+function forgotPasswordPost(){
+    document.forms[0].method="Post";
+    document.forms[0].name="forgotPassword";
+    document.forms[0].id="forgotPassword";
+    document.forms[0].action="forgotPassword.html";
+    var input = document.createElement("input");
+    input.setAttribute("type", "hidden");
+    input.setAttribute("name", "OWASP_CSRFTOKEN");
+    input.setAttribute("value", "JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T");
+    var input2 = document.createElement("input");
+    input2.setAttribute("name", "servApply");
+    input2.setAttribute("value", "N");
+    document.forms[0].appendChild(input);
+    document.forms[0].appendChild(input2);
+ 	document.forms[0].submit();
+}
+function citizenApplicationUrl(){
+    document.forms[0].method="Post";
+    document.forms[0].name="citizenApplication";
+    document.forms[0].id="citizenApplication";
+    document.forms[0].action="citizenApplication.html";
+    var input = document.createElement("input");
+    input.setAttribute("type", "hidden");
+    input.setAttribute("name", "OWASP_CSRFTOKEN");
+    input.setAttribute("value", "JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T");
+    document.forms[0].appendChild(input);
+ 	 document.forms[0].submit();
+}
+function citizenRegistrationForm(){
+    document.forms[0].method="Post";
+    document.forms[0].name="citizenRegister";
+    document.forms[0].id="citizenRegister";
+    document.forms[0].action="citizenRegistration.html";
+    var input = document.createElement("input");
+    input.setAttribute("type", "hidden");
+    input.setAttribute("name", "OWASP_CSRFTOKEN");
+    input.setAttribute("value", "JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T");
+    document.forms[0].appendChild(input);
+ 	 document.forms[0].submit();
+}
+
+    $(document).ready(function () {
+        $('.bxslider').bxSlider({
+            minSlides: 1,
+            maxSlides: 1,
+            slideMargin: 10
+        });
+		
+        
+				
+    });
+    
+    $(function() {
+        $( "a" ).tooltip({
+        	position: {
+       		 my: "right+10",
+       		 at: "right+5 top-5"
+       		 }
+       	
+          
+        });
+    });
+    
+   function switchLang(){
+	    if($("#lang1").val()==1){
+		   $("#Hin").hide();
+		   $("#Eng").show();
+	   }else{
+		   $("#Hin").show();
+		   $("#Eng").hide();
+		   $("#lang").val("2");
+	   } 
+		
+   }
+   
+   function switchLang2(){
+	    if($("#lang").val()==1){
+		   $("#Hin").hide();
+		   $("#Eng").show();
+		   $("#lang1").val("1");
+	   }else{
+		   $("#Hin").show();
+		   $("#Eng").hide();
+	   } 
+		
+  }
+   
+ function switchCaste(){
+	    if($("#caste").val()==1){
+	    	popupCenter('resources/pdf/20/SC.pdf', 'myPop1',600,600);
+	   }else if ($("#caste").val()==2) {
+		   popupCenter('resources/pdf/20/ST.pdf', 'myPop1',600,600);
+	   }else if ($("#caste").val()==3) {
+		   popupCenter('resources/pdf/20/OBC.pdf', 'myPop1',600,600)
+	   }else if ($("#caste").val()==4) {
+		   popupCenter('resources/pdf/20/BC1.pdf', 'myPop1',600,600);
+	   }else if ($("#caste").val()==5) {
+		   popupCenter('resources/pdf/20/BC2.pdf', 'myPop1',600,600);
+	   } 
+		
+ }
+
+    
+    function showMsg(hideDiv,showDiv){
+      	 document.getElementById(hideDiv).style.display="none";
+      	 document.getElementById(showDiv).style.display="block";
+       }
+    
+    function changeFontSize(element,step)
+    {
+    	step = parseInt(step,10);
+    	var el = $('p,li,a:not("#eNag")');
+    	$.each(el,function(){
+	    	var curFont = parseInt($(this).css('font-size'));
+	    	$(this).css('font-size',(curFont+step)+'px');
+    	});
+    }
+			
+    function resetFontSize(element)
+    {
+    	var el = $('p,li,a:not("#eNag")');
+    	$.each(el,function(){
+	    	$(this).css('font-size','13px');
+    	});
+    }
+    $(function() {
+    	 var tooltips = $( "[title]" ).tooltip({
+    		 position: {
+    		 my: "left bottom",
+    		 at: "right+5 top-5"
+    		 }
+    	});
+    });
+    
+    function showNote(){
+    	$( "#note" ).dialog({
+  	      resizable: false,
+  	      height:125,
+  	      width: "30%",
+  	    
+  	      position:['left+150%',300],
+  	      modal: true
+  	      
+  	  });
+    }
+    	
+    function contactUs(){
+    	$( "#contactUs" ).dialog({
+  	      resizable: false,
+  	      height:200,
+  	      width: "30%",
+  	      position:['left+150%',300],
+  	      modal: true
+  	      
+  	  });
+    }
+    
+    function popupCenter(url, title, w, h) {
+  	  var left = (screen.width/2)-(w/2);
+  	  var top = (screen.height/2)-(h/2);
+  	  return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width='+w+', height='+h+', top='+top+', left='+left);
+  	} 
+    	 
+</script>
+  <script>
+function getPopupWindow(urlText) {
+		$('#titleText').text(" ");
+		var url = urlText.split('~')[1];
+		var titleText = urlText.split('~')[0];
+		var urlStr = "";
+		var uniqueKey = "";
+		$('#titleText').text(titleText);
+		if (url == "citizenRegistration.html") {
+			$("#iframeId").css("min-height", "450px");
+		} else if (url == "forgotPassword.html") {
+			$("#iframeId").css("min-height", "280px");
+		} else {
+			$("#iframeId").css("min-height", "400px");
+		}
+		if (url.search("serviceId") > 0) {
+			var splitUrl = url.split('?')[0];
+			if (url == "citizenRegistration.html" && uniqueKey != "") {
+				urlStr = url + "&OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T&uniqueKey="
+						+ uniqueKey;
+			} else {
+				urlStr = url;
+			}
+		} else {
+			if (url == "citizenRegistration.html" && uniqueKey != "") {
+				urlStr = url + "?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T&uniqueKey="
+						+ uniqueKey;
+			} else {
+				urlStr = url + "?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T";
+			}
+		}
+		// to increase the width
+		if (urlStr.indexOf("knowYourEligibility.html") > -1) {
+			$("#customPopup .modal-dialog").addClass("modal-lg");
+		}
+		if (urlStr.indexOf("citizenRegistration.html") > -1) {
+			$("#customPopup .modal-dialog").removeClass("modal-lg");
+		}
+		if (urlStr.indexOf("citizenApplication.html") > -1) {
+			$("#customPopup .modal-dialog").addClass("modal-xl");
+		}
+		if (titleText == "Track Application Status") {
+			$("#customPopup .modal-dialog").addClass("modal-xl");
+		}
+		$("#customPopup .modal-header").empty();
+		$("#customPopup .modal-header")
+				.append(
+						"<h5 class='modal-title text-center w-100'>"
+								+ titleText
+								+ "</h5> <button type='button' class='close' data-dismiss='modal'aria-label='Close'>x</button>");
+		if (urlStr.indexOf("citizenRegistration.html") > -1) {
+			$.post(urlStr, 'param', function(data) {
+				var frame = document.getElementById("iframeId");
+				frame.contentWindow.document.open();
+				frame.contentWindow.document.write(data);
+				frame.contentWindow.document.close();
+			});
+		} else if (urlStr.indexOf("citizenApplication.html") > -1) {
+			var completeURLSplit = urlStr.split("?");
+			var postParam = {};
+			if (completeURLSplit.length > 1) {
+				var params = completeURLSplit[1].split("&");
+				for (var i = 0; i < params.length; i++) {
+					var paramSplit = params[i].split("=");
+					postParam[paramSplit[0].trim()] = paramSplit[1].trim();
+				}
+			}
+			$.post(completeURLSplit[0], postParam, function(data) {
+				var frame = document.getElementById("iframeId");
+				frame.contentWindow.document.open();
+				frame.contentWindow.document.write(data);
+				frame.contentWindow.document.close();
+			});
+		} else {
+			$("#iframeId").attr("src", urlStr);
+		}
+	}
+	</script>
+  <script>
+	function openLoginPopup() {
+
+		var urlStr = "loginWindow.do?servApply=N&OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T";
+		$("#iframeIdLogin").attr("src", urlStr);
+	}
+	</script>
+  <script>
+	 function closeModalWindow(){
+		  $("#loginPopup").modal('hide');
+	  } 
+</script>
+  <style>
+	.ui-widget-header {
+    background: none repeat scroll 0 0 #016906;
+    border: medium none;    
+}
+
+.ui-widget-overlay{
+background:#000;
+} 
+
+.ui-tooltip{
+
+ width:250px;
+}
+
+a.hyperLink_class {
+	font-size: 12px;
+    color: #666;
+    float: left;
+    margin-top: -40px;
+    position: absolute;
+    text-decoration: none;
+    z-index: 99999;
+}
+.accordion-section {
+    position: relative;
+}
+
+</style>
+ </head>            <!--CODE FOR GREYBOX START  -->       <!-- CODE FOR GREYBOX END  --> <!-- Carousel Scripts -->          <!-- FlexSlider -->           
+ <body> 
+  <form name="form" id="form" method="post"> 
+   <input type="hidden" name="as_sfid" value="AAAAAAVLLE6UOKW-vaSq6V6svKArAFddI3E8gKfMmwHgxQqc9hediC4Y6TkRgFvSd_gbBlOyWZmuIkNNJbJk2qnY2QLm_YlVEUj4nG77W4qhGfxAms7ViQbkCgP1nz5-dQuD1UQ=">
+   <input type="hidden" name="as_fid" value="939d77f53233c01ce8f79ca050a066d633561783">
+  </form> <!--	<div><marquee><font size="3" color="red">*** Site will be down for maintenance on 17-05-2018 from 6 PM to 8 PM, Sorry for inconvenience. ***</font></marquee></div>
+--> 
+  <div id="Eng"> 
+   <div class="wrapper"> <!-- Main container starts --> 
+    <div class="header"> <!-- Header starts --> 
+     <div class="top"> 
+      <div class="container"> 
+       <ul class="top_links"> 
+        <li style="margin-top:10px;"> <a class="bttn" title="Register yourself for online services" onclick="getPopupWindow('Register yourself~citizenRegistration.html')" data-toggle="modal" data-target="#customPopup"><img src="resources/homePage/20/images/user-icon.png"> Register Yourself</a></li> 
+        <li style="margin-top:10px;"><a class="bttn" href="loginWindow.do?servApply=N&amp;OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T"><img src="resources/homePage/20/images/user-icon.png"> Login</a></li> 
+        <li style="margin-top:10px;"> <a title="Forgot Password" class="bttn" data-target="#customPopup" data-toggle="modal" onclick="forgotPasswordPost()">Forgot Password</a></li> <!--<li><a href="loginWindow.do?servApply=N&OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" class="bttn" rel="gb_page_center[800, 400]"><img src="resources/homePage/20/images/user-icon.png" /> Login</a></li>--> 
+        <li><select id="lang1" onchange="switchLang();"><option value="1" selected="true">English</option> <option value="2">Hindi</option></select></li> 
+        <li class="fonts"> <a href="javascript:void(0);" onclick="changeFontSize('content','2');">A+</a> <a href="javascript:void(0);" onclick="resetFontSize('content');">A</a> <a href="javascript:void(0);" onclick="changeFontSize('content',-2);">A-</a> </li> 
+       </ul> 
+      </div> 
+     </div> 
+     <div class="main_header"> 
+      <div class="container"> <!--<div class="logo"><a id ="eNag"><img src="resources/homePage/20/images/logo-jharkhand.png" alt="Jharkhand" />e-Nagrik Seva<span>(version 2.0)</span></a></div>--> 
+       <div class="logo">
+        <a id="eNag"><img src="resources/homePage/20/images/logo-jharkhand.png" alt="Jharkhand">JharSewa</a>
+       </div> 
+       <div class="splus">
+        <img src="" alt="">
+        <br><span style="color:#000"><br></span> 
+       </div> <!-- <div ><img src="resources/homePage/20/images/serviceplus.png" alt="ServicePlus" /></div> --> 
+       <div class="clear"></div> 
+      </div> 
+      <div class="navigation"> <!-- Navigation starts --> 
+       <div class="container"> 
+        <ul class="menu"> 
+         <li><a class="active" href="javascript:;">Home</a></li> 
+         <li><a href="#about">About Us</a></li> 
+         <li><a href="javascript:void(0);" onclick="popupCenter('resources/pdf/20/ServiceWiseRequirements.pdf', 'myPop1',600,600)" title="Click to view Prerequisite for Applying">Prerequisite for Applying</a></li> 
+         <li><a href="javascript:void(0);" onclick="contactUs()">Contact Us</a></li> 
+         <li><a href="javascript:void(0);" onclick="popupCenter('resources/pdf/20/Jharkhand-edistrict-support.pdf', 'myPop1',600,600)" title="Click to view details of support team">Support</a></li> 
+         <li><a href="#faqs">FAQS</a></li> 
+         <li><a href="resources/pdf/20/declaration-jh.pdf">Download Declarations</a></li> <!-- <li><select class="form-control" id="caste" onChange="switchCaste();" style="margin-top:8%;">
+							<option value="0">Select Caste List</option>
+							<option value="1" >SC</option>
+						 	<option value="2" >ST</option>
+						 	<option value="3" >OBC</option>
+						 	<option value="4" >BC1</option>
+						 	<option value="5" >BC2</option>
+							 </select>
+							 </li> --> 
+        </ul> <!-- <div class="search_panel">
+							<input type="text" value="" placeholder="Search service for your state" />
+							<input type="submit" value="Go" />
+						</div> --> 
+       </div> 
+      </div> <!-- Navigation ends --> 
+     </div> 
+    </div> <!-- Header ends --> <!-- Main content starts --> 
+    <div class="body-content"> 
+     <div class="container"> 
+      <div class="leftpanel"> <!-- Leftpanel starts --> 
+       <div class="about block"> 
+        <div class="banner flexslider" data-sr="wait 0.5s"> 
+         <ul class="slides"> 
+          <li> <img class="mx" src="resources/homePage/20/images/bannerImage1.jpg" alt="Jharkhand Services"> </li> 
+          <li><img src="resources/homePage/20/images/bannerImage0.jpg"></li> 
+          <li><img src="resources/homePage/20/images/bannerImage4.jpg"></li> 
+         </ul> 
+        </div> 
+        <h1>About Us<a name="about"></a><span></span></h1> 
+        <div id="contents"> 
+         <p style="font-size:13px;"> Jharkhand e-District is a comprehensive and web enabled service portal that acts as an electronic gateway into the Government's portfolio of services.It is an end-to-end integrated solution which caters to the needs of various departments of Jharkhand state and provides various e-Governance services to its citizens. It provides an interface for citizens to avail various citizen centric services like applying for certificates, land records, pension etc. through this Portal to handle the processing of all these Jharkhand E-District applications. </p> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('contents','fullContent')">Read more</a> 
+        </div> 
+        <div id="fullContent" style="display:none;"> 
+         <p style="font-size:13px;"> Jharkhand e-District is a comprehensive and web enabled service portal that acts as an electronic gateway into the Government's portfolio of services.It is an end-to-end integrated solution which caters to the needs of various departments of Jharkhand state and provides various e-Governance services to its citizens. It provides an interface for citizens to avail various citizen centric services like applying for certificates, land records, pension etc. through this Portal to handle the processing of all these Jharkhand E-District applications. <br>eDistrict is one of the 31 Mission Mode Projects (MMP) under the National eGovernance Plan (NeGP). Department of Electronics &amp; Information Technology (DeitY), Government of India (GoI) is the nodal Department for e-District, which will be implemented by State Governments through their designated agencies. The MMP aims at electronic delivery of identified high volume citizen centric services, at district and sub-district level, which are not part of any other MMP. <br>Jharkhand e-District project intend to provide Government services to citizens through Common Service Centers(CSC) which are easily accessible. Services from different departments are brought under one umbrella at any CSC. Some of the services are also made available through online portal. It utilizes backend computerization to e-enable the delivery of services and ensures transparency and uniform application of rules. The project involves integrated and seamless delivery of services to public by automation, integration and incorporating Business Process Re-Engineering(BPR) where ever required. In a nutshell E-district is a tailor made program for minimizing effort and time to provide prompt and effective services to the public. <br><br>List of Core Services:<br> <br>Five service categories have been identified at the national level which shall be taken up for implementation by all States which agree to participate in the e District MMP. <br>(i) Issue of Certificates including services :Birth, Death, Domicile, Nationality, Caste, Marriage, Income, Employment, etc. <br>(ii) Social Welfare Schemes including services – Social welfare Pensions (Old age, Widow, Handicap, Destitute), Scholarships. <br>(iii) Revenue Court including services – including Case listing, Case adjournment, Stay orders, Final orders, Status of execution of orders: information, tracking, filing of miscellaneous applications. Also, Government dues and recovery, as part of Land Revenue – including issue of notices, record payments, track default processes, updation of treasury receipts, etc. <br>(iv) Ration Card related services including services change of address, additions, deletions of members, application for issue of duplicates, etc. <br>(v) RTI services including redressal of Grievances – application, tracking, monitoring, redressal, appeals, etc at district level. RTI services will be applicable to all departments/offices which have been provided with ICT infrastructure and connectivity for delivery of services under e District Scheme The States while identifying the services under the 5 core services should leverage the services identified and developed under the Implementation of State Portal, SSDG and Electronic Form project. </p> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('fullContent','contents')">Read less</a> 
+        </div> 
+       </div> 
+       <div class="featured_services block"> 
+        <div class="services"> 
+         <ul> 
+          <li data-sr="enter left"> <img class="mx" src="resources/homePage/20/images/service1.jpg" alt="Services name"> 
+           <div class="content"> 
+            <div class="title">
+             Services to Individuals
+            </div> 
+           </div> </li> 
+          <li data-sr="wait 0.5s enter left"> <a href="#" onclick="citizenApplicationUrl();"> <img class="mx" src="resources/homePage/20/images/service3.gif" alt="Track Application"></a> 
+           <div class="content"> 
+            <div class="title">
+             <a href="#" onclick="citizenApplicationUrl();">Tracking</a>
+            </div> 
+           </div> </li> 
+          <li data-sr="wait 0.8s enter left"><a onclick="window.open('http://www.jharkhand.gov.in/csc-locator', 'newwindow', 'left=0, top=0, width=1000, height=500'); "> <img class="mx" src="resources/homePage/20/images/service2.jpg" alt="Services name"></a> 
+           <div class="content"> 
+            <div class="title">
+             <a onclick="window.open('http://csc.jharkhand.gov.in/', 'newwindow', 'left=0, top=0, width=1000, height=500'); ">Pragya Kendras</a>
+            </div> 
+           </div> </li> 
+         </ul> 
+        </div> 
+       </div> 
+       <div id="faqs"> 
+        <h1>Frequently Asked Questions <span></span> </h1> 
+        <div class="accordion"> 
+         <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-1">How can I register my DSC?</a> 
+          <div id="accordion-1" class="accordion-section-content"> 
+           <p> Following are the instructions to use DSC:<br> 1.Download the respective Driver of your Digital Signature Card.<br> 2.Download the Java version 1.7 in your System.<br> 3.Go to Control Panel --&gt; Program --&gt; Java --&gt; General --&gt;Temporary Internet File --&gt;Settings --&gt;Delete All Files.<br> 4.Go to Control Panel --&gt; Program --&gt; Java --&gt;Security --&gt;Edit Site List --&gt;Add the Service Plus URL and bring Security Level to medium.<br> 5.After login (Officials Only) --&gt; Click on DSC Management --&gt; Click on register your DSC.</p> 
+          </div><!--end .accordion-section-content--> 
+         </div><!--end .accordion-section--> 
+         <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-2">How do I look for Services based on my profile ?</a> 
+          <div id="accordion-2" class="accordion-section-content"> 
+           <p>1. Click on the option Citizen Section--&gt; Check Your Entitlement available on the Homepage to open the form.<br> 2. Check Your Entitlement form is displayed on the screen.<br> 3. When you select your profile like state, caste etc. and click on search the list of services for which you are entitled will be displayed in the list. You can view the details.<br></p> 
+          </div><!--end .accordion-section-content--> 
+         </div><!--end .accordion-section--> 
+         <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-3">How to track my application status online?</a> 
+          <div id="accordion-3" class="accordion-section-content"> 
+           <p>You can track your application status by the following ways:<br> 1.To get the status of the application, click on Track Application Status Report link available under Citizen Section.<br> 2.You can also check the application status using your credentials (username and password). Click on the Login link available on the ServicePlus Home page. Then enter the username and password provided to you. Once you logged- in, click on Track Application Status link provided under View Status of Application.</p> 
+          </div><!--end .accordion-section-content--> 
+         </div><!--end .accordion-section--> 
+         <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-4">How citizen can apply for a Service?</a> 
+          <div id="accordion-4" class="accordion-section-content"> 
+           <p>A citizen can apply for a Service through following ways:<br> 1. Online: A citizen can apply for a service of his/her state via online with or without registration as per the service definition.<br> 2. Kiosk: A citizen can contact Kiosk of his/her area for applying a service. You can check the details of Kiosk under “Kiosk details” while clicking on the particular service.<br> 3. In person: A citizen can also apply for a service either by downloading application form online and submit it at the concerned office or can take the application form directly from the office.<br></p> 
+          </div><!--end .accordion-section-content--> 
+         </div><!--end .accordion-section--> 
+         <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-5">Where can I find the State Service Delivery Act?</a> 
+          <div id="accordion-5" class="accordion-section-content"> 
+           <p>1. Click on the option Citizen Section--&gt; Find State Service Delivery Act available on the Homepage to open the form.<br> 2. Select the state and click on submit. The State Service Delivery Act details will be displayed.</p> 
+          </div><!--end .accordion-section-content--> 
+         </div><!--end .accordion-section--> 
+        </div> 
+       </div> 
+       <div class="clear"> 
+       </div> 
+      </div> 
+      <div class="rightpanel"> <!-- Rightpanel starts --> 
+       <div class="list_items" id="fewServ"> 
+        <h4>Certificate Services<i class="icon services"></i></h4> 
+        <ul class="listing"> <!-- Service List for demo --> 
+         <li> <a href="javascript:void(0);" onclick="showNote()"> Issue of Birth Certificate</a></li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Issue of Caste Certificate </a></li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Issue of Death Certificate</a> </li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Issue of Income Certificate</a></li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Issue of Local Resident Certificate</a></li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Issue of Income and Asset Certificate for EWS </a></li> 
+         <li><a href="javascript:void(0);" onclick="showNote()">Marriage Registration Certificate </a></li> 
+        </ul> <!-- <a href="javascript:void(0);" style="text-decoration: none"  onclick="showMsg('fewServ','allServ')"><font color="blue" >read more</a> --> 
+       </div> 
+       <div class="list_items" id="allServ" style="display:none;"> 
+        <h4>Newly <br>Launched Services<i class="icon services"></i></h4> 
+        <ul class="listing"> <!-- Service List for demo --> 
+         <li>Issue of Birth Certificate<!-- </a> --></li> 
+         <li>Issue of Caste Certificate<!-- </a> --></li> 
+         <li>Issue of Death Certificate<!-- </a> --></li> 
+         <li>Issue of Income Certificate<!-- </a> --></li> 
+         <li>Issue of Residential Certificate<!-- </a> --></li> 
+        </ul> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('allServ','fewServ')"><font color="blue">read less</font></a><font color="blue"> </font>
+       </div><font color="blue"> 
+        <div class="separator"></div> 
+        <div class="list_items"> 
+         <h4>SOCIAL SECURITY PENSION SERVICES <i class="icon services"></i></h4> 
+         <ul class="listing"> 
+          <li> <a href="javascript:void(0);" onclick="showNote()">Old Age Pension Scheme</a></li> 
+          <li> <a href="javascript:void(0);" onclick="showNote()">Disability Pension Scheme</a></li> 
+          <li> <a href="javascript:void(0);" onclick="showNote()">Widow Pension Scheme</a></li> 
+         </ul> 
+        </div> 
+        <div class="list_items"> 
+         <h4>External Services<i class="icon services"></i></h4> 
+         <ul class="listing"> 
+          <div class="accordion"> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-6" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://www.nvsp.in" target="_blank">Electoral Services</a> 
+            <div id="accordion-6" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Registration of New Voter</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Registration of New Overseas Voter</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Correction / Update of Existing Voter</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Search Your Name in Electoral Roll</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Feed your Aadhaar Number</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Know your booth, AC, PC, BLO, ERO and DEO</li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-7" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://confonet.nic.in" target="_blank">Consumer Court Services</a> 
+            <div id="accordion-7" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Daily Cause List</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Judgement Search</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Case Status Tracking</li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-8" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://164.100.150.8/casestatus" target="_blank">Revenue Court Services</a> 
+            <div id="accordion-8" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Daily Cause List</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Petitioner Information</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Respondent Information</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Case Status Tracking</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Final Orders</li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-9" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jharbhoomi.nic.in" target="_blank">Land Record Services</a> 
+            <div id="accordion-9" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Know your Khata </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Know your Register II </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Know your Khata and Register II</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Apply Online for Mutation </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Check Mutation Application Status</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Bhu-Nakhsha </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Objection without debate-Execution of mutation promises </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Execution promises mutation-Cause where objection has been filled</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Execution promises mutation-Revision with effect from the date of the final order </li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-10" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jharkhandcomtax.gov.in/home" target="_blank">Commercial tax Dept. <br>Services</a> 
+            <div id="accordion-10" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">VAT Registration Non Sensitive Goods </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">VAT Registration Sensitive Goods </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">VAT Refund </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Electricity Duty </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Hotel Luxury Tax </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Entertainment Tax </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Advertisement Tax </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Central Sales Tax </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Professional Tax </li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-11" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://agri.jharkhand.gov.in" target="_blank">Agriculture, Animal Husbandry &amp; <br> Co-operative Dept. Services</a> 
+            <div id="accordion-11" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Wholesale Sales of Fertiliser </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Manufacturing of Wholesale </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Wholesale Sales of Pesticide </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Manufacturing of Pesticide </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Wholesale Sale of Seeds </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Retail shop of Seed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Retail Shop of Pesticide </li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-12" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://shramadhan.jharkhand.gov.in" target="_blank">Labour, Employment Training &amp; <br> Skill Development Dept. Services </a> 
+            <div id="accordion-12" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Registration Certificate of Shop/Organization </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Correction in Registration Certificate of Shop/Organization </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Lentils Miles/Flour Mill Factory Act 1948 License of Industrial Pratisthan </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under 1948 Industry Act, Nibandikaran of Industries </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under 1948 Industry Act, Renewal of License </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under 1948 Industry Act, Correction of License </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Map Subscriptions under Industries Act </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Map Subscriptions of Industrial House under 1948 Industries Act </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Complain Letter Execution,under 1948 Industries Act </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Contract labour Act- Issue of License </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Contract labour Act- Renewal of License </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Contract labour Act- Correction of License </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Contract labour Act- Registration of Principal Planner </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Under Contract labour Act- Correction of Principal Planner </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Registration Under Building &amp; other Construction Workers Planning and Terms of service regulation Act</li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Renewal of Registration Under Building &amp; other Construction Workers Planning and Terms of service regulation Act </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Execution of the application for registration of unorganized workers </li> 
+             <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank"> Candidate Login </a></li> 
+             <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank">Training Provider Login</a> </li> 
+             <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank">Service Seeker Login </a></li> 
+            </div> 
+           </div> 
+           <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-13" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jbvnl.co.in" target="_blank">Energy Department Services</a> 
+            <div id="accordion-13" class="accordion-section-content"> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Issuance of the notice for the inspection on receipt of the application for LT Service Single Phase 4 KW Power connecter </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power connector inspection on receipt of the application, issuance of notices for LT Service 3 phase 30 Kilo watt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power connector inspection on receipt of the application, issuance of notices for LT Service 3 phase above 30 Kilo watt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power connector inspection on receipt of the application, issuance of notices for HT Service </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power connector inspection on receipt of the application, issuance of notices for EHT Service </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Distribution line for LT Service sigle phase/Service Line/Meter/Other materials for installation inspection </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service 3 phase 30 kilo watt distribution line/service Line/Meter/Other materials for installation inspection </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service 3 phase above 30 kilo watt distribution line/service Line/Meter/Other materials for installation inspection </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">HT Service distribution line/service Line/Meter/Other materials for installation inspection </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">EHT Service distribution line/service Line/Meter/Other materials for installation inspection </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) The combination of single-phase electric charges/Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) 3phase 30 kw The combination of single-phase electric charges/Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) 3phase &amp; above 30 kw The combination of single-phase electric charges/Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Extension &amp; Installation of DSS /Upgradation)The combination of electric charges of single-phase /Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Extension &amp; Installation of DSS /Upgradation)The combination of electric charges of Three phase, 30 Kilo watt /Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Extension &amp; Installation of DSS /Upgradation)The combination of electric charges of Three phase &amp; above 30 Kilo watt /Safe deposit /Application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power combination fee for HT Service/safe deposit/application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power combination fee for EHT Service/safe deposit/application fee/Issuance of notice of 15 working days for execution of self deed </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) Power combination of single phase </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) Power combination of Three Phase 30 Kilowattt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Upgradation) Power combination of Above Three Phase 30 Kilowattt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Installation of DSS/with upgradation) Power combination of single phase </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Installation of DSS/with upgradation) Power combination of 3phase 30 Kilowatt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">LT Service(Without Extension &amp; Installation of DSS/with upgradation) Power combination of above 3phase 30 Kilowatt </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power combination of HT Service with Instalation certificate (Without extension) </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power combination of HT Service with Instalation certificate (With extension) </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Power combination of EHT service </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Correction of Incorrect electric bill, improve-if any new information is not required </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Correction of Incorrect electric bill, improve-if any new information or meter testing is not required </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Normal fuse Repair-Urban </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Normal fuse Repair-Rural </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Line/Cable Break Down for Urban Areas </li> 
+             <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">Line/Cable Break Down for Rural Areas </li> 
+            </div> 
+           </div> 
+           <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 12px;width: 100%;"> <a href="http://www.jharkhandsamadhan.nic.in" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">Grievance redressal Service</a> 
+           </div> 
+           <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 6px;width: 100%;"> <a href="resources/pdf/20/jharkhandInformationServices.pdf" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">Information about Government Services</a> 
+           </div> 
+           <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 1px;width: 100%;"> <a href="resources/pdf/20/JharkhandFormAvailability.pdf" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">Forms related to Government Services</a> 
+           </div> 
+           <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 12px;width: 100%;"> <a href="http://www.ors.gov.in" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">Online Registration System for Patients</a> 
+           </div> 
+          </div>
+         </ul> 
+        </div> 
+        <div class="separator"></div> 
+        <div class="list_items" id="fewServ"> 
+         <h4>REPORTS <i class="icon services" style="top:7px;"></i></h4> 
+         <ul class="listing"> <!--<li><a href="viewAllServiceList.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" rel="gb_page_center[1000, 550]">List of Service offered across the country (All State)</a></li>--> 
+          <li><a href="nationalReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T">Summary Report For Application Count</a></li> 
+          <li><a href="stateWisePendencyReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T">State Wise Pendency Report</a></li> <!--<li><a href="categoryWiseReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T"  rel="gb_page_center[1000, 550]">Service Category Wise</a></li>--> <!--<li><a href="serviceTypeWiseReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" rel="gb_page_center[1000, 550]">Service Type Wise</a></li>--> 
+         </ul> 
+        </div> 
+        <div class="separator"></div> </font>
+      </div><font color="blue"> </font>
+     </div><font color="blue"> </font>
+    </div><font color="blue"> </font>
+   </div><font color="blue"> </font>
+  </div><font color="blue"> <!-- Hindi Code Starts Here --> 
+   <div id="Hin" style="display:none;"> 
+    <div class="wrapper"> <!-- Main container starts --> 
+     <div class="header"> <!-- Header starts --> 
+      <div class="top"> 
+       <div class="container"> 
+        <ul class="top_links"> 
+         <li style="margin-top:10px;"><a href="#" onclick="citizenRegistrationForm();" class="bttn" title="ऑनलाइन सेवाओं के लिए अपने को रजिस्टर करना"><img src="resources/homePage/20/images/user-icon.png">रजिस्टर कीजिये</a></li> 
+         <li style="margin-top:10px;"><a href="#" onclick="forgotPasswordPost();" class="bttn"><img src="resources/homePage/20/images/user-icon.png">पासवर्ड भूल गए?</a></li> 
+         <li><a href="loginWindow.do?servApply=N&amp;OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" class="bttn" rel="gb_page_center[400, 250]"><img src="resources/homePage/20/images/user-icon.png"> लॉगिन</a></li> 
+         <li><select id="lang" onchange="switchLang2();"><option value="1">English</option> <option value="2" selected="true">हिंदी</option></select></li> 
+         <li class="fonts"> <a href="javascript:void(0);" onclick="changeFontSize('content','2');">A+</a> <a href="javascript:void(0);" onclick="resetFontSize('content');">A</a> <a href="javascript:void(0);" onclick="changeFontSize('content',-2);">A-</a> </li> 
+        </ul> 
+       </div> 
+      </div> 
+      <div class="main_header"> 
+       <div class="container"> <!--<div class="logo"><a id ="eNag"><img src="resources/homePage/20/images/logo-jharkhand.png" alt="Jharkhand" />e-Nagrik Seva<span>(version 2.0)</span></a></div>--> 
+        <div class="logo">
+         <a id="eNag"><img src="resources/homePage/20/images/logo-jharkhand.png" alt="Jharkhand">झार सेवा </a>
+        </div> 
+        <div class="splus">
+         <img src="" alt="">
+         <br><span style="color:#000"> <br></span> 
+        </div> <!-- <div ><img src="resources/homePage/20/images/serviceplus.png" alt="ServicePlus" /></div> --> 
+        <div class="clear"></div> 
+       </div> 
+       <div class="navigation"> <!-- Navigation starts --> 
+        <div class="container"> 
+         <ul class="menu"> 
+          <li><a class="active" href="javascript:;">होम</a></li> 
+          <li><a href="#about">हमारे बारे में</a></li> 
+          <li><a href="javascript:void(0);" onclick="popupCenter('resources/pdf/20/ServiceWiseRequirements_Hindi.pdf', 'myPop1',600,600)" title="Click to view Prerequisite for Applying">आवेदन के लिए जरूरी </a></li> 
+          <li><a href="javascript:void(0);" onclick="contactUs()">संपर्क करें</a></li> 
+          <li><a href="javascript:void(0);" onclick="popupCenter('resources/pdf/20/Jharkhand-edistrict-support.pdf', 'myPop1',600,600)" title="Click to view details of support team">सहायता</a></li> 
+          <li><a href="#faqs">सवाल जवाब</a></li> <!-- <li><a href="resources/pdf/20/declaration-jh.pdf">डाउनलोड घोषणा प्रपत्र</a></li>
+<li><select id="caste" onChange="switchCaste();" style="margin-top:8%;">
+							<option value="0">जाति सूची का चयन</option>
+							<option value="1" >अनुसूचित जाति</option>
+						 	<option value="2" >अनुसूचित जनजाति</option>
+						 	<option value="3" >अन्य पिछड़ा वर्ग</option>
+						 	<option value="4" >पिछड़ा वर्ग 1</option>
+						 	<option value="5" >पिछड़ा वर्ग 2</option>
+							 </select>
+							 </li> --> 
+         </ul> <!-- <div class="search_panel">
+							<input type="text" value="" placeholder="Search service for your state" />
+							<input type="submit" value="Go" />
+						</div> --> 
+        </div> 
+       </div> <!-- Navigation ends --> 
+      </div> 
+     </div> <!-- Header ends --> <!-- Main content starts --> 
+     <div class="body-content"> 
+      <div class="container"> 
+       <div class="leftpanel"> <!-- Leftpanel starts --> 
+        <div class="about block"> 
+         <div class="banner flexslider" data-sr="wait 0.5s"> 
+          <ul class="slides"> 
+           <li> <img class="mx" src="resources/homePage/20/images/bannerImage1.jpg" alt="Jharkhand Services"> </li> 
+           <li><img src="resources/homePage/20/images/bannerImage0.jpg"></li> 
+           <li><img src="resources/homePage/20/images/bannerImage4.jpg"></li> 
+          </ul> 
+         </div> 
+         <h1>हमारे बारे में<a name="about"></a><span></span></h1> 
+         <div id="contentss"> 
+          <p style="font-size:13px;"> झारखंड ई-डिस्ट्रिक्ट (झारसेवा) एक व्यापक और सक्षम वेब सेवा पोर्टल है जो सरकारी सेवाओं को इलेक्ट्रॉनिक रूप में प्रदान करता है । यह नागरिकों के एवं विभिन्न विभागों की जरुरतों का इ-गवर्नेंस के माध्यम से एकीकृत उपाय प्रदान करता है | यहझारखंड के नागरिकोंको विभिन्न नागरिकसेवायेंजैसे विभिन्न प्रकार के प्रमाण पत्रों के लिए आवेदन, भूमि पट्टों की जानकारी एवं उससे सम्बंधित सेवायें, सामाजिक सुरक्षा पेंशन से संबंधित सेवाएँ के लिए आवेदन आदि प्रदान करता है | </p> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('contentss','fullContentt')">अधिक जानिए</a> 
+         </div> 
+         <div id="fullContentt" style="display:none;"> 
+          <p style="font-size:13px;"> झारखंड ई-डिस्ट्रिक्ट (झारसेवा) एक व्यापक और सक्षम वेब सेवा पोर्टल है जो सरकारी सेवाओं को इलेक्ट्रॉनिक रूप में प्रदान करता है । यह नागरिकों के एवं विभिन्न विभागों की जरुरतों का इ-गवर्नेंस के माध्यम से एकीकृत उपाय प्रदान करता है | यहझारखंड के नागरिकोंको विभिन्न नागरिकसेवायेंजैसे विभिन्न प्रकार के प्रमाण पत्रों के लिए आवेदन, भूमि पट्टों की जानकारी एवं उससे सम्बंधित सेवायें, सामाजिक सुरक्षा पेंशन से संबंधित सेवाएँ के लिए आवेदन आदि प्रदान करता है | <br> ई-डिस्ट्रिक्ट (झारसेवा)राष्ट्रीय ई-गवर्नेंस योजना (एन.ई.जी.पी) के अंतर्गत 31 मिशन मोड प्रोजेक्ट (एम.एम.पी) में से एक है | इलेक्ट्रॉनिक्स एवं सूचना प्रौद्योगिकी विभाग (डी.ई.आई.टी.वाई) भारत सरकार , ई-डिस्ट्रिक्टके लिए नोडल विभाग है ,जो उनके नामित एजेंसियों के माध्यम से राज्य सरकारों द्वारा लागू किया जा रहा है । एम.एम.पी का लक्ष्य नागरिक केंद्रित सेवाओं की इलेक्ट्रॉनिक डिलीवरी (वितरण) करना है, जो किसी दूसरे एम.एम.पी का हिस्सा नहीं है | <br> झारखण्ड ई-डिस्ट्रिक्ट परियोजना (झारसेवा) कॉमन सर्विस सेंटर (प्रज्ञा केंद्र ) / जन सुविधा केंद्र / स्वनिबंधित नागरिक के माध्यम से नागरिकों को सरकारी सेवाएं प्रदान आसानी एवं सुलभ रूप से प्रदान करता है | यह सेवाओं की ई- डिलीवरी पारदर्शी एवं सामान रूप से (First In First Out) आवेदनों का निस्तारण करता है | ई-डिस्ट्रिक्ट (झारसेवा) जनता के लिए त्वरित और प्रभावी सेवाएं समय पर प्रदान कराता है। <br><br>मुख्य सेवाओं की सूची: <br> <br>झारसेवा (ई-डिस्ट्रिक्ट) के अंतर्गत निम्नलिखित सेवायें मुख्य रूप से प्रदान की जा रही है | <br>1. प्रमाण पत्र निर्गत करना : जन्म , मृत्यु, स्थानीय निवासी, जाति, विवाह प्रमाण पत्र ,आय प्रमाण पत्र, आदि | <br>2. सेवाओं के अंतर्गत समाज कल्याण योजनाएं : सामाजिक सुरक्षापेंशन (वृद्धा, विधवा, विकलांगता से संबंधित पेंशन योजनायें) | <br>3. सेवाओं के अंतर्गत राजस्व न्यायालय : वाद का सूचीकरण, वाद स्थगन, स्थगन आदेश, अंतिम आदेश, आदेशों के निष्पादन की स्थिति सूचना, ट्रैकिंग, सरकारी देय राशि और वसूली, भू-राजस्व के हिस्से में नोटिस निर्गत करना, रिकॉर्ड भुगतान, डिफ़ॉल्टट्रैक प्रक्रियाओं, ट्रेजरी प्राप्तियों का अपडेशन, आदि | <br>4. राशन कार्ड के अंतर्गत सेवायें : पता, परिवर्धन परिवर्तित करना , सदस्यों का विलोपन, डुप्लिकेट निर्गत करने के लिए आवेदन, आदि | </p> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('fullContent','contents')">Read less</a> 
+         </div> 
+        </div> 
+        <div class="featured_services block"> 
+         <div class="services"> 
+          <ul> 
+           <li data-sr="enter left"> <img class="mx" src="resources/homePage/20/images/service1.jpg" alt="Services name"> 
+            <div class="content"> 
+             <div class="title">
+              जनोपयोगी सेवायें 
+             </div> 
+            </div> </li> 
+           <li data-sr="wait 0.5s enter left"> <a href="#" onclick="citizenApplicationUrl();"> <img class="mx" src="resources/homePage/20/images/service3.gif" alt="Track Application"></a> 
+            <div class="content"> 
+             <div class="title">
+              <a href="#" onclick="citizenApplicationUrl();">अपने आवेदन की स्थिति जाने</a>
+             </div> 
+            </div> </li> 
+           <li data-sr="wait 0.8s enter left"><a onclick="window.open('http://www.jharkhand.gov.in/csc-locator', 'newwindow', 'left=0, top=0, width=1000, height=500'); "> <img class="mx" src="resources/homePage/20/images/service2.jpg" alt="Services name"></a> 
+            <div class="content"> 
+             <div class="title">
+              <a onclick="window.open('http://csc.jharkhand.gov.in/', 'newwindow', 'left=0, top=0, width=1000, height=500'); ">प्रज्ञा केन्द्र</a>
+             </div> 
+            </div> </li> 
+          </ul> 
+         </div> 
+        </div> 
+        <div id="faqs"> 
+         <h1>अक्सर पूछे जाने वाले प्रश्न: <span></span> </h1> 
+         <div class="accordion"> 
+          <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-1">मैं अपना डी. एस. सी. (डिजिटल सिग्नेचर) कैसे रजिस्टर कर सकता हूँ?</a> 
+           <div id="accordion-1" class="accordion-section-content"> 
+            <p> निम्नलिखित निर्देशों से डी.एस.सी का उपयोग कर सकते हैं: <br> 1. अपने डी.एस.सी से संबंधित ड्राइवर को डाउनलोड करें | <br> 2. जावा संस्करण 1.7 को अपने सिस्टम में डाउनलोड करें | <br> 3. कंट्रोल पैनल में जायें -&gt; प्रोग्राम -&gt; जावा -&gt; जेनरल -&gt; टेम्पररी इंटनेट फाइल -&gt; सेटिंग -&gt; सभी फाइलों को हटायें | <br> 4. कंट्रोल पैनल में जायें -&gt; प्रोग्राम -&gt; जावा -&gt; सिक्यूरिटी -&gt; एडिट साईट लिस्ट -&gt; सर्विस प्लस यु. आर. अल को जोर्ड़े और सिक्यूरिटी लेवल को मध्यम करें | <br> 5. लॉग इन के बाद (केवल अधिकारियों के लिए) -&gt; डी.एस.सी मैनेजमेंट पर क्लिक करें -&gt; अपने डी.एस.सी रजिस्टर पर क्लिक करें | </p> 
+           </div><!--end .accordion-section-content--> 
+          </div><!--end .accordion-section--> 
+          <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-2"> मैं सेवाओं पर आधारित अपने प्रोफ़ाइल को कैसे देख सकता हूँ ?</a> 
+           <div id="accordion-2" class="accordion-section-content"> 
+            <p>1. सिटिज़न सेक्शन विकल्प पर क्लिक करें -&gt; फार्म खोलने के लिए होमपेज पर अपनी पात्रता को जाँचें | <br> 2. स्क्रीन पर प्रदर्शित अपनी पात्रता फॉर्म को जाँचें | <br> 3. जब आप अपने प्रोफाइल को का चयन करते हैं जैसे राज्य , जाति आदि और सेवाओं की सूची खोज पर क्लिक करते हैं जिसके लिए आप हकदार हैं वह सूची प्रदर्शित होगी | आप विवरण देख सकते हैं।<br></p> 
+           </div><!--end .accordion-section-content--> 
+          </div><!--end .accordion-section--> 
+          <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-3">मैं ऑनलाइन अपनी आवेदन की स्थिति कैसे ट्रैक कर सकता हूँ?</a> 
+           <div id="accordion-3" class="accordion-section-content"> 
+            <p>आप निम्नलिखित निर्देशों से अपने आवेदन की स्थिति ट्रैक कर सकते हैं:<br> 1. आवेदन की स्थिति प्राप्त करने के लिए, सिटीजन सेक्शन के अंतर्गत उपलब्ध आवेदन की स्थिति ट्रैक करने की रिपोर्ट लिंक पर क्लिक करें | <br> 2. आप अपने परिचय पत्र (यूजर आईडी और पासवर्ड) उपयोग कर भी आवेदन की स्थिति प्राप्त कर सकते हैं | सर्विस प्लस के होम पेज पर उपलब्ध लॉग इन लिंक पर क्लिक करें | उसके बाद आपको दिए गए यूजर आईडी और पासवर्ड से प्रवेश करें | जब एक बार आप लॉग इन कर गए , आवेदन की स्थिति देखें के तहत ट्रैक आवेदन की स्थिति दिए गए लिंक पर क्लिक करें | </p> 
+           </div><!--end .accordion-section-content--> 
+          </div><!--end .accordion-section--> 
+          <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-4">नागरिक कैसे एक सेवा के लिए आवेदन कर सकता हैं ?</a> 
+           <div id="accordion-4" class="accordion-section-content"> 
+            <p>एक नागरिक निम्नांकित तरीके से सेवा के लिए आवेदन कर सकता है : <br> 1. ऑनलाइन पंजीकरण : एक नागरिक एक सेवा के लिए ऑनलाइन आवेदन अपने राज्य के आधार पर सर्विस की परिभाषा के अनुसार पंजीकरण करके सकता है | <br> 2. प्रज्ञा केंद्र / जन सुविधा केन्द्र : एक नागरिक एक सेवा के आवेदन के लिए अपने क्षेत्र के प्रज्ञा केंद्र /जन सुविधा केन्द्र को संपर्क कर सकता है | </p> 
+           </div><!--end .accordion-section-content--> 
+          </div><!--end .accordion-section--> 
+          <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-5">मुझे राज्य सेवा गारंटी अधिनियम कहाँ से मिल सकता है ?</a> 
+           <div id="accordion-5" class="accordion-section-content"> 
+            <p>1. सिटीजन सेक्शन विकल्प पर क्लिक करें -&gt; फॉर्म खोलने के लिए मुखपृष्ठ पर उपलब्ध राज्य सेवा गारंटी अधिनियम को खोजें। </p> 
+           </div><!--end .accordion-section-content--> 
+          </div><!--end .accordion-section--> 
+         </div> 
+        </div> 
+        <div class="clear"> 
+        </div> 
+       </div> 
+       <div class="rightpanel"> <!-- Rightpanel starts --> 
+        <div class="list_items" id="fewServ"> 
+         <h4>प्रमाण पत्र सेवा<i class="icon services"></i></h4> 
+         <ul class="listing"> <!-- Service List for demo --> 
+          <li> <a href="javascript:void(0);" onclick="showNote()">जन्म प्रमाण पत्र</a></li> 
+          <li><a href="javascript:void(0);" onclick="showNote()">जाति प्रमाण पत्र</a></li> 
+          <li><a href="javascript:void(0);" onclick="showNote()">मृत्यु प्रमाणपत्र</a> </li> 
+          <li><a href="javascript:void(0);" onclick="showNote()">आय प्रमाण पत्र</a></li> 
+          <li><a href="javascript:void(0);" onclick="showNote()">स्थानीय निवासी प्रमाण पत्र</a></li> 
+          <li><a href="javascript:void(0);" onclick="showNote()">आय एवं सम्पति प्रमाण पत्र</a></li> 
+          <li><a href="javascript:void(0);" onclick="showNote()"> विवाह निबंधन प्रमाण पत्र </a></li> 
+         </ul> <!-- <a href="javascript:void(0);" style="text-decoration: none"  onclick="showMsg('fewServ','allServ')"><font color="blue" >read more</a> --> 
+        </div> 
+        <div class="list_items" id="allServ" style="display:none;"> 
+         <h4>Newly <br>Launched Services<i class="icon services"></i></h4> 
+         <ul class="listing"> <!-- Service List for demo --> 
+          <li>Issue of Birth Certificate<!-- </a> --></li> 
+          <li>Issue of Caste Certificate<!-- </a> --></li> 
+          <li>Issue of Death Certificate<!-- </a> --></li> 
+          <li>Issue of Income Certificate<!-- </a> --></li> 
+          <li>Issue of Residential Certificate<!-- </a> --></li> 
+         </ul> <a href="javascript:void(0);" style="text-decoration: none" onclick="showMsg('allServ','fewServ')"><font color="blue">read less</font></a><font color="blue"> </font>
+        </div><font color="blue"> 
+         <div class="separator"></div> 
+         <div class="list_items"> 
+          <h4>सामाजिक सुरक्षा पेंशन सेवाएं<i class="icon services"></i></h4> 
+          <ul class="listing"> 
+           <li> <a href="javascript:void(0);" onclick="showNote()">वृद्धावस्था पेंशन योजना</a></li> 
+           <li> <a href="javascript:void(0);" onclick="showNote()">विकलांगता पेंशन योजना</a></li> 
+           <li> <a href="javascript:void(0);" onclick="showNote()">विधवा पेंशन योजना</a></li> 
+          </ul> 
+         </div> 
+         <div class="list_items"> 
+          <h4>वाह्य सेवाएँ<i class="icon services"></i></h4> 
+          <ul class="listing"> 
+           <div class="accordion"> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-6" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://www.nvsp.in" target="_blank">निर्वाचन सेवा</a> 
+             <div id="accordion-6" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">मतदाता सूची में नए पंजीकरण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">नए विदेशी मतदाता के पंजीकरण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">सुधार / मौजूदा मतदाता के अपडेट</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">मतदाता सूची में अपना नाम खोजें </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">आधार संख्या अपडेट</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">अपने बूथ, एसी, पीसी, बीएलओ, ईआरओ और डीईओ जानिए</li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-7" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://confonet.nic.in" target="_blank">उपभोक्ता न्यायालय सेवा</a> 
+             <div id="accordion-7" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">दैनिक कार्य सूची</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">जजमेंट खोजें</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">मामलों की स्थिति का ट्रैकिंग</li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-8" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://164.100.150.8/casestatus" target="_blank">राजस्व न्यायालय सर्विसेज</a> 
+             <div id="accordion-8" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">दैनिक कार्य सूची</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">याचिकाकर्ता सूचना</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">प्रतिवादी सूचना</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">मामलों की ट्रैकिंग</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">अंतिम आदेश</li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-9" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jharbhoomi.nic.in" target="_blank">लैंड रिकार्ड सेवा</a> 
+             <div id="accordion-9" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">अपना खाता देखें </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">अपना रजिस्टर II देखें </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">अपना खाता एवं रजिस्टर II जानें</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ऑनलाइन दाखिल ख़ारिज </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">म्युटेशन वाद संख्या की स्थिति</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">भू-नक्शा </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">बहस के बिना अनापत्ति - म्युटेशन वादों का निष्पादन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">म्युटेशन वादों का निष्पादन – कारण जहाँ आपति भर दिया गया है</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">म्युटेशन वादों का निष्पादन – अंतिम आदेश की तारीख से प्रभावी संशोधन </li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-10" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jharkhandcomtax.gov.in/home" target="_blank">वाणिज्य कर विभाग की सेवायें</a> 
+             <div id="accordion-10" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">गैर संवेदनशील वस्तुओं का वैट पंजीकरण </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">संवेदनशील वस्तुओं का वैट पंजीकरण </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">वैट वापसी </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">विधुत शुल्क </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">होटल विलासिता कर </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">मनोरंजन कर </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">विज्ञापन कर </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">केन्द्रीय बिक्री कर </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">व्यवसाय कर </li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-11" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://agri.jharkhand.gov.in" target="_blank">कृषि, पशुपालन &amp; सहकारी <br>विभाग सर्विसेज</a> 
+             <div id="accordion-11" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">उर्वरक के थोक बिक्री</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">थोक के विनिर्माण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कीटनाशक की थोक बिक्री</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कीटनाशक का विनिर्माण </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">बीज की थोक बिक्री </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">बीज की खुदरा दुकान </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> कीटनाशक की खुदरा दुकान </li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-12" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://shramadhan.jharkhand.gov.in" target="_blank">श्रम, नियोजन प्रशिक्षण एवं कौशल <br> विकास विभाग की सेवायें</a> 
+             <div id="accordion-12" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">दुकान / प्रतिष्ठान का निबंधन प्रमाण पत्र </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">दुकान / प्रतिष्ठान के निबंधन प्रमाण पत्र का संशोधन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">दाल मील / आटा चक्की कारखाना अधिनियम, 1948 के अधीन औधोगिक प्रतिष्ठान आदि की अनुज्ञप्ति</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के तहत् कारखानों का निबंधीकरण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के अंतर्गत अनुज्ञप्ति का नवीकरण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के अंतर्गत अनुज्ञप्ति का संशोधन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के अंतर्गत मानचित्र अनुमोदन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के तहत् कारखाना भवन के मानचित्र का अनुमोदन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">कारखाना अधिनियम, 1948 के तहत् प्राप्त शिकायत पत्रों का निष्पादन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ठेका मजदूर अधिनियम के अंतर्गत ठेकेदार को अनुज्ञप्ति निर्गत करना </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ठेका मजदूर अधिनियम के अंतर्गत अनुज्ञप्ति का नवीकरण </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ठेका मजदूर अधिनियम के अंतर्गत अनुज्ञप्ति का संशोधन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ठेका मजदूर अधिनियम के अंतर्गत प्रधान नियोजन का निबंधन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ठेका मजदूर अधिनियम के अंतर्गत प्रधान नियोजन का संशोधन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">भवन एवं अन्य सन्निर्माण कर्मकार नियोजन एवं सेवा शर्त का नियमन अधिनियम के अंतर्गत निबंधन करना</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">भवन एवं अन्य सन्निर्माण कर्मकार नियोजन एवं सेवा शर्त का नियमन अधिनियम के अंतर्गत निबंधन का नवीकरण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">असंगठित कर्मकार निबंधन हेतु प्राप्त आवेदन का निष्पादन</li> 
+              <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank"> आवेदक का लॉग इन</a></li> 
+              <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank">प्रशिक्षण प्रदाता का लॉग इन</a> </li> 
+              <li style=" background: rgba(0, 0, 0, 0)  no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;"> <a href="http://hunar.jharkhand.gov.in" target="_blank">सेवा साधक का लॉग इन </a></li> 
+             </div> 
+            </div> 
+            <div class="accordion-section"> <a class="accordion-section-title" href="#accordion-13" style="text-decoration:none;">&nbsp;</a> <a class="hyperLink_class" href="http://jbvnl.co.in" target="_blank">उर्जा विभाग की सेवायें</a> 
+             <div id="accordion-13" class="accordion-section-content"> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा सिंगल फेज 4 किलो वाट तक के विधुत संयोजन के आवेदन प्राप्ति पर निरीक्षण के नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा 3 फेज 30 किलो वाट तक के विधुत संयोजन के आवेदन प्राप्ति पर निरीक्षण के नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा 3 फेज 30 किलो वाट से ऊपर के विधुत संयोजन के आवेदन प्राप्ति पर निरीक्षण के नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एच.टी सेवा के विधुत संयोजन के आवेदन प्राप्ति पर निरीक्षण के नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ई.एच.टी सेवा के विधुत संयोजन के आवेदन प्राप्ति पर निरीक्षण के नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा सिंगल फेज के वितरण लाईन / सर्विस लाईन / मीटर / अन्य सामग्रियों के अधिष्ठापन हेतु निरीक्षण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा 3 फेज 30 किलो वाट तक के वितरण लाईन / सर्विस लाईन / मीटर / अन्य सामग्रियों के अधिष्ठापन हेतु निरीक्षण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा 3 फेज 30 किलो वाट से ऊपर के वितरण लाईन / सर्विस लाईन / मीटर / अन्य सामग्रियों के अधिष्ठापन हेतु निरीक्षण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एच.टी सेवा के वितरण लाईन / सर्विस लाईन / मीटर / अन्य सामग्रियों के अधिष्ठापन हेतु निरीक्षण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ई.एच.टी सेवा के वितरण लाईन / सर्विस लाईन / मीटर / अन्य सामग्रियों के अधिष्ठापन हेतु निरीक्षण</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) सिंगल फेज के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) 3 फेज 30 किलो वाट तक के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) 3 फेज 30 किलो वाट से ऊपर के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) सिंगल फेज के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) 3 फेज 30 किलो वाट तक के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) 3 फेज 30 किलो वाट से ऊपर के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एच.टी सेवा के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ई.एच.टी सेवा के विधुत संयोजन शुल्क / सुरक्षित जमा / आवेदन शुल्क / एकरारनामा के निष्पादन हेतु 15 कार्य दिवसों की नोटिस का निर्गमन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) सिंगल फेज का विधुत संयोजन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) 3 फेज 30 किलो वाट तक का विधुत संयोजन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं अपग्रेडेशन के बिना) 3 फेज 30 किलो वाट से ऊपर का विधुत संयोजन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) सिंगल फेज का विधुत संयोजन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) 3 फेज 30 किलो वाट तक का विधुत संयोजन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एल.टी सेवा (एक्सटेंशन एवं इन्स्टॉलेशन ऑफ डी / एस / एस एवं/या अपग्रेडेशन के साथ) 3 फेज 30 किलो वाट से ऊपर का विधुत संयोजन </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एच.टी सेवा (एक्सटेंशन के बिना) का विधुत संयोजन अधिष्ठापन प्रमाण पत्र के साथ</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">एच.टी सेवा (एक्सटेंशन के साथ) का विधुत संयोजन, यदि वितरण नियम के द्वारा कार्य किया जाना है </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">ई.एच.टी सेवा का विधुत संयोजन</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">गलत विधुत विपत्र में सुधार – यदि कोई नई सूचना की आवश्यकता हो</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">गलत विधुत विपत्र में सुधार – यदि अतिरिक्त सूचना या मीटर आदि जाँच की आवश्यकता हो</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">सामान्य फ्यूज मरम्मति – शहरी क्षेत्रों के लिए </li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">सामान्य फ्यूज मरम्मति – ग्रामीण क्षेत्रों के लिए</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">लाईन / केबल ब्रेक डाउन - शहरी क्षेत्रों के लिए</li> 
+              <li style=" background: rgba(0, 0, 0, 0) url('resources/images/jhbullet.png') no-repeat scroll left 12px; 
+						background-position: left 10px; padding: 3px 0 3px 10px; color: #777777;">लाईन / केबल ब्रेक डाउन - ग्रामीण क्षेत्रों के लिए</li> 
+             </div> 
+            </div> 
+            <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 12px;width: 100%;"> <a href="http://www.jharkhandsamadhan.nic.in" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">सेवा शिकायत निवारण</a> 
+            </div> 
+            <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 6px;width: 100%;"> <a href="resources/pdf/20/jharkhandInformationServices.pdf" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">सरकारी सेवाओं के बारे में जानकारी</a> 
+            </div> 
+            <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 1px;width: 100%;"> <a href="resources/pdf/20/JharkhandFormAvailability.pdf" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">सरकारी सेवाओं से संबंधित फार्म</a> 
+            </div> 
+            <div style="border-top: 1px solid #e0e0e0;float: left;padding-bottom: 12px;width: 100%;"> <a href="http://www.ors.gov.in" target="_blank" style="text-decoration:none;color: #666;float: left;margin-top: 10px;">मरीजों के लिए ऑनलाइन पंजीकरण प्रणाली</a> 
+            </div> 
+           </div>
+          </ul> 
+         </div> 
+         <div class="separator"></div> 
+         <div class="list_items" id="fewServ"> 
+          <h4>विवरणी <i class="icon services" style="top:7px;"></i></h4> 
+          <ul class="listing"> <!--<li><a href="viewAllServiceList.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" rel="gb_page_center[1000, 550]">List of Service offered across the country (All State)</a></li>--> 
+           <li><a href="nationalReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T">सारांश रिपोर्ट - आवेदन गणना के लिए</a></li> 
+           <li><a href="stateWisePendencyReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T">राज्य वार लंबित मामलों की रिपोर्ट</a></li> <!--<li><a href="categoryWiseReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T"  rel="gb_page_center[1000, 550]">Service Category Wise</a></li>--> <!--<li><a href="serviceTypeWiseReport.html?OWASP_CSRFTOKEN=JFCU-OFOB-G975-Y2AH-E31K-2KH2-JE0V-ZQ6T" rel="gb_page_center[1000, 550]">Service Type Wise</a></li>--> 
+          </ul> 
+         </div> 
+         <div class="separator"></div> </font>
+       </div><font color="blue"> </font>
+      </div><font color="blue"> </font>
+     </div><font color="blue"> </font>
+    </div><font color="blue"> </font>
+   </div><font color="blue"> 
+    <div class="footer"> <!-- Footer starts here --> 
+     <div class="container"> 
+      <div class="govt_logos"> 
+       <ul> 
+        <li><a style="cursor:pointer;" onclick="window.open('http://www.negp.gov.in/', 'newwindow', 'left=0, top=0, width=500, height=500'); "><img src="resources/homePage/20/images/egovernance.jpg" alt="eGovernance"></a></li> 
+        <li><a style="cursor:pointer;" onclick="window.open('http://india.gov.in/', 'newwindow', 'left=0, top=0, width=500, height=500'); "><img src="resources/homePage/20/images/national-portal.jpg" alt="National-Portal of India"></a></li> 
+       </ul> 
+      </div> 
+      <div class="nic_info "> 
+       <p>Site is designed, hosted and maintained by <a style="cursor:pointer;" onclick="window.open('http://www.nic.in/', 'newwindow', 'left=0, top=0, width=500, height=500'); ">National Informatics Centre</a><br> <!-- Contents on this website is owned, updated and managed by the <a style="cursor:pointer;" onclick="window.open('http://www.panchayat.gov.in/', 'newwindow', 'left=0, top=0, width=500, height=500'); ">Ministry of Panchayati Raj</a> --></p> 
+      </div> 
+      <div class="clear"></div> 
+     </div> 
+     <p class="copyright"> © 2010 JharSewa. All rights reserved. Website Policy<br> Powered by <a style="cursor:pointer;" onclick="window.open('http://www.serviceonline.gov.in/demo', 'newwindow', 'left=0, top=0, width=500, height=500'); ">ServicePlus</a> </p> 
+    </div> <!-- Footer ends here -->  <!-- Main container ends --> 
+    <div id="note" style="display: none; overflow: hidden; vertical-align: middle; background: none; repeat scroll 0 0 #016906;
+    border: medium none; ">
+      The Service is available through <a onclick="window.open('http://csc.jharkhand.gov.in/', 'newwindow', 'scrollbars=yes, resizable=yes,left=100, top=70, width=1000, height=500'); "><font color="green">Pragya Kendras</font></a>.
+     <br> Please visit the nearest Pragya Kendra to avail this service or Register yourself for online apply. 
+     <br> 
+    </div> 
+    <div id="contactUs" style="display: none; overflow: hidden;">
+      State Designated Agency (SDA): 
+     <br>JAP-IT, Ground Floor, Engineers Hostel No. 2,
+     <br>Near Golchakkar, Dhurwa, Ranchi-834004,
+     <br>Phone-0651-2401581, 2401040 
+     <br>Email - support.edistrict@jharkhandmail.gov.in 
+    </div> <script type="text/javascript" language="javascript" src="resources/homePage/20/js/scrollReveal.js"></script> <script type="text/javascript" language="javascript">
+
+      window.sr = new scrollReveal();
+
+</script>  </font></font><!-- login modal-->
+  <div class="modal fade" id="loginPopup">
+   <font color="blue"><font color="blue"> 
+     <div class="modal-dialog"> 
+      <div class="modal-content"> <!-- Modal Header --> 
+       <div class="modal-header text-center"> 
+        <div class="modal-title text-center w-100">
+         Login
+        </div> <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button> 
+       </div> <!-- Modal body --> 
+       <div class="modal-body"> <iframe width="100%" id="iframeIdLogin" src="" style="min-height: 350px; height: auto; border: 0px"></iframe> 
+       </div> 
+      </div> 
+     </div> </font></font>
+  </div><font color="blue"><font color="blue"> <!-- customPopup starts --> 
+    <div class="modal fade" id="customPopup" role="dialog"> 
+     <div class="modal-dialog modal-lg"> 
+      <div class="modal-content"> 
+       <div class="modal-header"> 
+        <h5 class="modal-title text-center w-100" id="titleText"></h5> <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button> 
+       </div> 
+       <div class="modal-body"> <iframe width="100%" name="iframeId" id="iframeId" src="" style="min-height: 450px; border: 0px;"></iframe> 
+       </div> 
+      </div> 
+     </div> 
+    </div> </font></font>
+ </body>
+</html>
