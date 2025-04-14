@@ -83,6 +83,7 @@
                 <thead>
                     <tr>
                         <th>Retailer ID</th>
+                        <th>Password</th>
                         <th>Action</th>
                     </tr>
                 </thead>
@@ -134,31 +135,43 @@
             document.getElementById('registerPage').style.display = 'none';
             document.getElementById('loginPage').style.display = 'block';
         }
+        function generatePassword() {
+            let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let password = '';
+            for (let i = 0; i < 8; i++) {
+                password += characters.charAt(Math.floor(Math.random() * characters.length));
+            }
+            return password;
+        }
         function createRetailerId() {
             let Id = Math.floor(Math.random() * 1000000);
-            retailerIds.push(Id);
+            let password = generatePassword();
+            retailerIds.push({ Id, password });
             localStorage.setItem('retailerIds', JSON.stringify(retailerIds));
             populateRetailerIdsTable();
         }
         function deleteRetailerId(Id) {
-            retailerIds = retailerIds.filter(id => id !== Id);
+            retailerIds = retailerIds.filter(id => id.Id !== Id);
             localStorage.setItem('retailerIds', JSON.stringify(retailerIds));
             populateRetailerIdsTable();
         }
         function populateRetailerIdsTable() {
             let tableBody = document.getElementById('retailerIdsTableBody');
             tableBody.innerHTML = '';
-            retailerIds.forEach(Id => {
+            retailerIds.forEach(id => {
                 let row = document.createElement('tr');
                 let cell1 = document.createElement('td');
-                cell1.textContent = Id;
+                cell1.textContent = id.Id;
                 let cell2 = document.createElement('td');
+                cell2.textContent = id.password;
+                let cell3 = document.createElement('td');
                 let deleteButton = document.createElement('button');
                 deleteButton.textContent = 'Delete';
-                deleteButton.onclick = function() { deleteRetailerId(Id); };
-                cell2.appendChild(deleteButton);
+                deleteButton.onclick = function() { deleteRetailerId(id.Id); };
+                cell3.appendChild(deleteButton);
                 row.appendChild(cell1);
                 row.appendChild(cell2);
+                row.appendChild(cell3);
                 tableBody.appendChild(row);
             });
         }
